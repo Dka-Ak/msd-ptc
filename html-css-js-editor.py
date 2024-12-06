@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
-
-class HTMLEditor:
+class htmleditor:
     def __init__(self, root):
         self.root = root
         self.root.title("HTML Editor")
@@ -42,8 +41,3 @@ class HTMLEditor:
                     file.write(content)
             except Exception as e:
                 messagebox.showerror("Error", f"Could not save file: {e}")
-
-if __name__ == "__main__":
-    root = tk.Tk()
-    editor = HTMLEditor(root)
-    root.mainloop()
